@@ -13,7 +13,6 @@ public class CompagnieAutoroute extends Voyage{
 		this.tarifs = new ArrayList<Tarif>();
 	}
 
-
 	public BigDecimal obtenirTarif(Porte e, Porte s) {
 		BigDecimal tarif = null;
 		if(getTarifExact(e, s) != null)
@@ -48,6 +47,7 @@ public class CompagnieAutoroute extends Voyage{
 		
 		return tarif;
 	}
+	
 	public void ajouterTarif(Tarif t) {
 		tarifs.add(t);
 	}
